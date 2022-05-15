@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "223323576358",
+    "project_id": "drcredit-1fdc9",
+    "storage_bucket": "drcredit-1fdc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223323576358:android:ec28d0eade892f1e1a6ee7",
+        "android_client_info": {
+          "package_name": "com.example.drcredit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223323576358-pt316ahati5lul7f57g0d3ou78glmd3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqtHjWsg1ALt1_Ox4d4iAHsjaTT6frIxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223323576358-pt316ahati5lul7f57g0d3ou78glmd3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

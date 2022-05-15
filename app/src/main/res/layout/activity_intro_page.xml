@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".introPage"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+
+            android:src="@drawable/ic_back"
+            android:id="@+id/imgBack"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Mobile number"
+        android:textSize="20dp"
+        android:textColor="#2F414E"
+        android:textFontWeight="700"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="An OTP will be sent for verification"
+        android:textSize="14dp"
+        android:textFontWeight="400"
+        android:layout_marginTop="12dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+            android:textSize="18dp"
+        android:text="+91" android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+            android:layout_marginBottom="12dp"
+        android:textColor="#8897A2"
+        android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/etGetPhone"
+            android:background="@null"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="#2F414E"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"/>
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom|center_horizontal"
+    android:layout_weight="1"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_gravity="bottom"
+    android:fitsSystemWindows="true"
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/textview_background"
+            android:src="@drawable/check" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:maxLines="2"
+            android:text="Get important messages and support from Whatsapp, SMS and Call" />
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/getOtpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PROCeed"
+                android:textColor="#ffffff"
+                android:background="@color/button"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>
