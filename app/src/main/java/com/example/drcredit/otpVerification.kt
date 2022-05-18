@@ -1,6 +1,7 @@
 package com.example.drcredit
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -22,11 +23,12 @@ class otpVerification : AppCompatActivity() {
      var editText6: EditText? = null
      lateinit var progressBar : ProgressBar
      lateinit var verifyBtn : Button
+     lateinit var sharedPreferences : SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-
+        sharedPreferences = getSharedPreferences("drFile", MODE_PRIVATE)
         setContentView(R.layout.activity_otp_verification)
 
         var textView : TextView = findViewById(R.id.textView2)
@@ -189,6 +191,7 @@ class otpVerification : AppCompatActivity() {
         mAuth!!.signInWithCredential(credential)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
+                    sharedPreferences.edit().putBoolean("isLoggedIn",true).apply()
                     val i = Intent(this@otpVerification, creditScoreDetail::class.java)
                     startActivity(i)
                     finish()

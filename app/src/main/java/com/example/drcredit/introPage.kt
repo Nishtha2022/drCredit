@@ -1,6 +1,7 @@
 package com.example.drcredit
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
@@ -22,9 +23,14 @@ class introPage : AppCompatActivity() {
     lateinit var getOtpButton : Button
     lateinit var progressBar: ProgressBar
     private var verificationId: String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+
         setContentView(R.layout.activity_intro_page)
+
         progressBar = findViewById(R.id.progressBar)
         editText = findViewById(R.id.etGetPhone)
         getOtpButton = findViewById(R.id.getOtpButton)
